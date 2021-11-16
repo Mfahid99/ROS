@@ -1,0 +1,72 @@
+void MainWindow::detectObjects(rs2::video_frame color_frame, rs2::depth_frame depth_frame, float depth_scale)
+{
+    // convert RealSense frame to OpenCV Mat
+    cv::Mat matColor(cv::Size(color_frame.get_width(), color_frame.get_height()), CV_8UC3, (void*)color_frame.get_data(), cv::Mat::AUTO_STEP);
+    cv::cvtColor(matColor, matColor, cv::COLOR_RGB2BGR);
+    // convert and clone depth frame to OpenCV Mat
+    cv::Mat matDepth = cv::Mat(cv::Size(depth_frame.get_width(), depth_frame.get_height()), CV_16UC1, (void*)depth_frame.get_data(), cv::Mat::AUTO_STEP).clone();
+    matDepth.convertTo(matDepth, CV_64F);
+    matDepth = matDepth * _depthScale;
+
+    // convert mat to batch of images
+    cv::Mat inputBlob = cv::dnn::blobFromImage(matColor, _inScaleFactor, cv::Size((int)_inWidth, (int)_inHeight), _meanVal, false);
+    // set the network input
+    _net.setInput(inputBlob, "data");
+    // compute output
+    cv::Mat detection = _net.forward("detection_out");
+    cv::Mat detectionMat(detection.size[2], detection.size[3], CV_32F, detection.ptr<float>());
+    // crop the input frame
+    cv::Mat matColorRoi = matColor(_rectRoi);
+    matDepth = matDepth(_rectRoi);
+
+    float confidenceThreshold = 0.8f;
+    for (int i = 0; i < detectionMat.rows; i++)
+    {
+        float confidence = detectionMat.at<float>(i, 2);
+
+        if (confidence > confidenceThreshold)
+        {
+            size_t objectClass = (size_t)(detectionMat.at<float>(i, 1));
+
+            int xLeftBottom = static_cast<int>(detectionMat.at<float>(i, 3) * matColorRoi.cols);
+            int yLeftBottom = static_cast<int>(detectionMat.at<float>(i, 4) * matColorRoi.rows);
+            int xRightTop = static_cast<int>(detectionMat.at<float>(i, 5) * matColorRoi.cols);
+            int yRightTop = static_cast<int>(detectionMat.at<float>(i, 6) * matColorRoi.rows);
+
+            cv::Rect object((int)xLeftBottom, (int)yLeftBottom, (int)(xRightTop - xLeftBottom), (int)(yRightTop - yLeftBottom));
+            object = object & cv::Rect(0, 0, matDepth.cols, matDepth.rows);
+
+            // mean depth inside the detection region
+            int nzCount = cv::countNonZero(matDepth(object));
+            double meanDistance = (nzCount > 0) ? cv::sum(matDepth(object))[0] / nzCount : 0.0;
+            std::ostringstream ssout;
+            ssout << "<" << _classNames[objectClass] << "> : ";
+            if (meanDistance > 0.0)
+                ssout << std::setprecision(2) << meanDistance << " meters away";
+            else
+                ssout << "over range";
+
+            cv::rectangle(matColorRoi, object, cv::Scalar(0, 255, 0));
+            int baseLine = 0;
+            cv::Size labelSize = getTextSize(ssout.str(), cv::FONT_HERSHEY_COMPLEX, 0.6, 2, &baseLine);
+            cv::Point ptCenter = (object.br() + object.tl()) * 0.5;
+            ptCenter.x = ptCenter.x - labelSize.width / 2;
+            cv::rectangle(matColorRoi,
+                cv::Rect(cv::Point(ptCenter.x, ptCenter.y - labelSize.height), cv::Size(labelSize.width, labelSize.height + baseLine)),
+                cv::Scalar(128, 255, 128), CV_FILLED);
+            putText(matColorRoi, ssout.str(), ptCenter, cv::FONT_HERSHEY_COMPLEX, 0.6, cv::Scalar(0, 0, 0), 2);
+        }
+    }
+
+    cv::cvtColor(matColorRoi, matColorRoi, cv::COLOR_BGR2RGB);
+    // gray out the left of ROI
+    cv::Mat matColorRoiLeft = matColor(_rectRoiLeft);
+    cv::Mat matGrayLeft;
+    cv::cvtColor(matColorRoiLeft, matGrayLeft, cv::COLOR_RGB2GRAY);
+    cv::cvtColor(matGrayLeft, matColorRoiLeft, cv::COLOR_GRAY2RGB);
+    // gray out the roght of ROI
+    cv::Mat matColorRoiRight = matColor(_rectRoiRight);
+    cv::Mat matGrayRight;
+    cv::cvtColor(matColorRoiRight, matGrayRight, cv::COLOR_RGB2GRAY);
+    cv::cvtColor(matGrayRight, matColorRoiRight, cv::COLOR_GRAY2RGB);
+}

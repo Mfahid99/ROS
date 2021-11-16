@@ -1,0 +1,4 @@
+<launch>
+ <node name="bmp180" pkg="bmp180_topic" type="bmp180GetData.py" output="screen"/>
+<!-- <node name="bmp180Listener" pkg="bmp180_topic" type="listenerTest.py" output="screen"/> -->
+</launch>
