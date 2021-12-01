@@ -348,6 +348,15 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
+I2CDEV_LIB:FILEPATH=I2CDEV_LIB-NOTFOUND
+
+//Path to a library.
+I2C_LIB:FILEPATH=I2C_LIB-NOTFOUND
+
+//Path to a library.
+IOCTL_LIB:FILEPATH=IOCTL_LIB-NOTFOUND
+
+//Path to a library.
 JSONCPP_LIBRARY_jsoncpp:FILEPATH=/usr/lib/aarch64-linux-gnu/libjsoncpp.so
 
 //lsb_release executable was found
@@ -644,6 +653,9 @@ SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 //Name of the computer/site where compile is being run
 SITE:STRING=Stingray-Nano
 
+//Path to a library.
+STAT_LIB:FILEPATH=STAT_LIB-NOTFOUND
+
 //The directory containing a CMake configuration file for Simbody.
 Simbody_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/simbody
 
@@ -706,6 +718,12 @@ actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
 //The directory containing a CMake configuration file for angles.
 angles_DIR:PATH=/opt/ros/melodic/share/angles/cmake
+
+//Value Computed by CMake
+bmp180_topic_BINARY_DIR:STATIC=/home/stingray/catkin_ws/build/bmp180_topic
+
+//Value Computed by CMake
+bmp180_topic_SOURCE_DIR:STATIC=/home/stingray/catkin_ws/src/bmp180_topic
 
 //The directory containing a CMake configuration file for bond.
 bond_DIR:PATH=/opt/ros/melodic/share/bond/cmake
@@ -852,6 +870,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for i2c-dev.
+i2c-dev_DIR:PATH=i2c-dev_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for i2c.
+i2c_DIR:PATH=i2c_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for ignition-cmake2.
 ignition-cmake2_DIR:PATH=/usr/share/cmake/ignition-cmake2
 
@@ -876,11 +900,14 @@ ignition-transport8_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/ignition-transport
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
+//The directory containing a CMake configuration file for ioctl.
+ioctl_DIR:PATH=ioctl_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for jsoncpp.
 jsoncpp_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/jsoncpp
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libimage_transport.so
+lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -902,6 +929,15 @@ octomap_DIR:PATH=/usr/share/octomap
 
 //Path to a library.
 onelib:FILEPATH=/usr/lib/aarch64-linux-gnu/libgazebo_opende_ou.so
+
+//Value Computed by CMake
+pectoral_fin_actuators_topic_BINARY_DIR:STATIC=/home/stingray/catkin_ws/build/pectoral_fin_actuators_topic
+
+//Dependencies for the target
+pectoral_fin_actuators_topic_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/aarch64-linux-gnu/liblog4cxx.so;general;/usr/lib/aarch64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/aarch64-linux-gnu/libboost_system.so;general;/usr/lib/aarch64-linux-gnu/libboost_thread.so;general;/usr/lib/aarch64-linux-gnu/libboost_chrono.so;general;/usr/lib/aarch64-linux-gnu/libboost_date_time.so;general;/usr/lib/aarch64-linux-gnu/libboost_atomic.so;general;/usr/lib/aarch64-linux-gnu/libpthread.so;general;/usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4;general;i2c;general;stat;general;ioctl;general;i2c-dev;
+
+//Value Computed by CMake
+pectoral_fin_actuators_topic_SOURCE_DIR:STATIC=/home/stingray/catkin_ws/src/pectoral_fin_actuators_topic
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
@@ -947,6 +983,9 @@ sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/melodic/share/smclib/cmake
+
+//The directory containing a CMake configuration file for stat.
+stat_DIR:PATH=stat_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -1169,7 +1208,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,0 +1,8 @@
+prefix=/home/stingray/catkin_ws/devel
+
+Name: pectoral_fin_actuators_topic
+Description: Description of pectoral_fin_actuators_topic
+Version: 0.0.0
+Cflags: -I/home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/include
+Libs: -L${prefix}/lib -lpectoral_fin_actuators_topic
+Requires: roscpp

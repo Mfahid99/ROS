@@ -1,0 +1,8 @@
+prefix=/home/stingray/catkin_ws/install
+
+Name: bmp180_topic
+Description: Description of bmp180_topic
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
