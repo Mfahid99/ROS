@@ -480,17 +480,17 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named pectoral_fin_actuators_topic
+# Target rules for targets named pectoral_fin_actuators_node
 
 # Build rule for target.
-pectoral_fin_actuators_topic: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pectoral_fin_actuators_topic
-.PHONY : pectoral_fin_actuators_topic
+pectoral_fin_actuators_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pectoral_fin_actuators_node
+.PHONY : pectoral_fin_actuators_node
 
 # fast build rule for target.
-pectoral_fin_actuators_topic/fast:
-	$(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build
-.PHONY : pectoral_fin_actuators_topic/fast
+pectoral_fin_actuators_node/fast:
+	$(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build
+.PHONY : pectoral_fin_actuators_node/fast
 
 # Help Target
 help:
@@ -529,7 +529,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... pectoral_fin_actuators_topic"
+	@echo "... pectoral_fin_actuators_node"
 .PHONY : help
 
 

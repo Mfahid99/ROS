@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>right_fin_actuator</name>
+  <version>0.0.0</version>
+  <description>The right_fin_actuator package</description>
+
+ <maintainer email="alexanderlewiscunningham@gmail.com">stingray</maintainer>
+
+   <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>stat</build_depend>
+  <build_depend>ioctl</build_depend>
+  <build_depend>unistd</build_depend>
+  <build_depend>i2c</build_depend>
+  <build_depend>i2c-dev</build_depend>
+  <build_depend>stdio</build_depend>
+  <build_depend>fcntl</build_depend>
+  <build_depend>syslog</build_depend>
+  <build_depend>inttypes</build_depend>
+  <build_depend>errno</build_depend>
+  <build_depend>math</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>stat</build_export_depend>
+  <build_export_depend>ioctl</build_export_depend>
+  <build_export_depend>i2c</build_export_depend>
+  <build_export_depend>i2c-dev</build_export_depend>
+  <build_export_depend>stdio</build_export_depend>
+  <build_export_depend>fcntl</build_export_depend>
+  <build_export_depend>syslog</build_export_depend>
+  <build_export_depend>inttypes</build_export_depend>
+  <build_export_depend>errno</build_export_depend>
+  <build_export_depend>math</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>stat</exec_depend>
+  <exec_depend>ioctl</exec_depend>
+  <exec_depend>unistd</exec_depend>
+  <exec_depend>i2c</exec_depend>
+  <exec_depend>i2c-dev</exec_depend>
+  <exec_depend>stdio</exec_depend>
+  <exec_depend>fcntl</exec_depend>
+  <exec_depend>syslog</exec_depend>
+  <exec_depend>inttypes</exec_depend>
+  <exec_depend>errno</exec_depend>
+  <exec_depend>math</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

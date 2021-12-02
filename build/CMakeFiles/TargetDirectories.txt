@@ -61,7 +61,7 @@
 /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/install/local.dir
 /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/test.dir
 /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/list_install_components.dir
-/home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir
 /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/install.dir
+/home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir
 /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/edit_cache.dir
 /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/rebuild_cache.dir

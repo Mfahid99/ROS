@@ -20,19 +20,19 @@ Servo::Servo() {
 Servo::~Servo() {
 }
 
-int Servo::write(int angle) {
+int Servo::setAngle(int angle) {
     return this->setAngle(angle, angle);
 }
 
-int Servo::write(int angle, int speed) {
+int Servo::setAngle(int angle, int speed) {
     if ((angle > this->max_angle) || (angle < this->min_angle)) {
         cout << angle << " is out of range.";
         return 1; // Parameter out of range.
     }
-    angle = (currentAngle + 90.0f) / 180.0f; // Make angle value from 0 to 1
+    angle = (angle + 90.0f) / 180.0f; // Make angle value from 0 to 1
     // Multiply difference between max pwm length and min pwm length by "angle", add minimum angle.
     // The result the correct pwm length for the angle.
-    pwmLength = (int) (((float) (MAX_LENGTH) - (float) (MIN_LENGTH) * angle) + (float) (MIN_LENGTH);
+    pwmLength = (int) (((float) (MAX_LENGTH) - (float) (MIN_LENGTH) * angle) + (float) (MIN_LENGTH));
             // Call driver function to set pwm length.
             driver->setPWM(channel, 0, pwmLength);
     return 0; // DONE

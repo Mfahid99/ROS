@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/rule:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/rule
-.PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/rule
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/rule:
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/rule
+.PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/rule
 
 # Convenience name for target.
-pectoral_fin_actuators_topic: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/rule
+pectoral_fin_actuators_node: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/rule
 
-.PHONY : pectoral_fin_actuators_topic
+.PHONY : pectoral_fin_actuators_node
 
 # fast build rule for target.
-pectoral_fin_actuators_topic/fast:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build
-.PHONY : pectoral_fin_actuators_topic/fast
+pectoral_fin_actuators_node/fast:
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build
+.PHONY : pectoral_fin_actuators_node/fast
 
 src/PCA9685.o: src/PCA9685.cpp.o
 
@@ -188,7 +188,7 @@ src/PCA9685.o: src/PCA9685.cpp.o
 
 # target to build an object file
 src/PCA9685.cpp.o:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/PCA9685.cpp.o
 .PHONY : src/PCA9685.cpp.o
 
 src/PCA9685.i: src/PCA9685.cpp.i
@@ -197,7 +197,7 @@ src/PCA9685.i: src/PCA9685.cpp.i
 
 # target to preprocess a source file
 src/PCA9685.cpp.i:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.i
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/PCA9685.cpp.i
 .PHONY : src/PCA9685.cpp.i
 
 src/PCA9685.s: src/PCA9685.cpp.s
@@ -206,8 +206,35 @@ src/PCA9685.s: src/PCA9685.cpp.s
 
 # target to generate assembly for a file
 src/PCA9685.cpp.s:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.s
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/PCA9685.cpp.s
 .PHONY : src/PCA9685.cpp.s
+
+src/Servo.o: src/Servo.cpp.o
+
+.PHONY : src/Servo.o
+
+# target to build an object file
+src/Servo.cpp.o:
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/Servo.cpp.o
+.PHONY : src/Servo.cpp.o
+
+src/Servo.i: src/Servo.cpp.i
+
+.PHONY : src/Servo.i
+
+# target to preprocess a source file
+src/Servo.cpp.i:
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/Servo.cpp.i
+.PHONY : src/Servo.cpp.i
+
+src/Servo.s: src/Servo.cpp.s
+
+.PHONY : src/Servo.s
+
+# target to generate assembly for a file
+src/Servo.cpp.s:
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/Servo.cpp.s
+.PHONY : src/Servo.cpp.s
 
 src/actuator.o: src/actuator.cpp.o
 
@@ -215,7 +242,7 @@ src/actuator.o: src/actuator.cpp.o
 
 # target to build an object file
 src/actuator.cpp.o:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/actuator.cpp.o
 .PHONY : src/actuator.cpp.o
 
 src/actuator.i: src/actuator.cpp.i
@@ -224,7 +251,7 @@ src/actuator.i: src/actuator.cpp.i
 
 # target to preprocess a source file
 src/actuator.cpp.i:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.i
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/actuator.cpp.i
 .PHONY : src/actuator.cpp.i
 
 src/actuator.s: src/actuator.cpp.s
@@ -233,7 +260,7 @@ src/actuator.s: src/actuator.cpp.s
 
 # target to generate assembly for a file
 src/actuator.cpp.s:
-	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.s
+	cd /home/stingray/catkin_ws/build && $(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_node.dir/src/actuator.cpp.s
 .PHONY : src/actuator.cpp.s
 
 # Help Target
@@ -246,13 +273,16 @@ help:
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... list_install_components"
-	@echo "... pectoral_fin_actuators_topic"
 	@echo "... install"
+	@echo "... pectoral_fin_actuators_node"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src/PCA9685.o"
 	@echo "... src/PCA9685.i"
 	@echo "... src/PCA9685.s"
+	@echo "... src/Servo.o"
+	@echo "... src/Servo.i"
+	@echo "... src/Servo.s"
 	@echo "... src/actuator.o"
 	@echo "... src/actuator.i"
 	@echo "... src/actuator.s"

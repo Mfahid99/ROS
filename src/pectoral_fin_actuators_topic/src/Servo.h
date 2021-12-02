@@ -15,8 +15,8 @@ public:
     Servo(void);
     Servo(int channel, PCA9685* driver, int min = -90, int max = 90);
     ~Servo();
-    int write(int);
-    int write(int, int);
+    int setAngle(int);
+    int setAngle(int, int);
 
 private:
      // init constructor

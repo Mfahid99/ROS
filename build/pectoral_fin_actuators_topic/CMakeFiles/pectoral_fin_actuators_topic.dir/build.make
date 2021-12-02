@@ -57,33 +57,9 @@ include pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir
 # Include the compile flags for this target's objects.
 include pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/flags.make
 
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/flags.make
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o: /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/actuator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stingray/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o"
-	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o -c /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/actuator.cpp
-
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.i"
-	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/actuator.cpp > CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.i
-
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.s"
-	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/actuator.cpp -o CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.s
-
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.requires:
-
-.PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.requires
-
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.provides: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.requires
-	$(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.provides.build
-.PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.provides
-
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.provides.build: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o
-
-
 pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/flags.make
 pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o: /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/PCA9685.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stingray/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stingray/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o"
 	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o -c /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/PCA9685.cpp
 
 pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.i: cmake_force
@@ -105,28 +81,70 @@ pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA
 pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o.provides.build: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o
 
 
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/flags.make
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o: /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stingray/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o"
+	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o -c /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.cpp
+
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.i"
+	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.cpp > CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.i
+
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.s"
+	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.cpp -o CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.s
+
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.requires:
+
+.PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.requires
+
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.provides: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.requires
+	$(MAKE) -f pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.provides.build
+.PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.provides
+
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.provides.build: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o
+
+
 # Object files for target pectoral_fin_actuators_topic
 pectoral_fin_actuators_topic_OBJECTS = \
-"CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o" \
-"CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o"
+"CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o" \
+"CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o"
 
 # External object files for target pectoral_fin_actuators_topic
 pectoral_fin_actuators_topic_EXTERNAL_OBJECTS =
 
-/home/stingray/catkin_ws/devel/lib/pectoral_fin_actuators_topic/pectoral_fin_actuators_topic: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o
-/home/stingray/catkin_ws/devel/lib/pectoral_fin_actuators_topic/pectoral_fin_actuators_topic: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o
-/home/stingray/catkin_ws/devel/lib/pectoral_fin_actuators_topic/pectoral_fin_actuators_topic: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make
-/home/stingray/catkin_ws/devel/lib/pectoral_fin_actuators_topic/pectoral_fin_actuators_topic: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stingray/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/stingray/catkin_ws/devel/lib/pectoral_fin_actuators_topic/pectoral_fin_actuators_topic"
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build.make
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/libroscpp.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/librosconsole.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/librostime.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stingray/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so"
 	cd /home/stingray/catkin_ws/build/pectoral_fin_actuators_topic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pectoral_fin_actuators_topic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build: /home/stingray/catkin_ws/devel/lib/pectoral_fin_actuators_topic/pectoral_fin_actuators_topic
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build: /home/stingray/catkin_ws/devel/lib/libpectoral_fin_actuators_topic.so
 
 .PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/build
 
-pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/requires: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o.requires
 pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/requires: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o.requires
+pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/requires: pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o.requires
 
 .PHONY : pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/requires
 

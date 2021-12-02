@@ -50,6 +50,10 @@ PCA9685.h
 inttypes.h
 -
 
+/home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.cpp
+Servo.h
+/home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.h
+
 /home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.h
 iostream
 -

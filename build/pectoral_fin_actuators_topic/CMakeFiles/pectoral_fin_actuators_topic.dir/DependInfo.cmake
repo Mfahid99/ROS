@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/PCA9685.cpp" "/home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/PCA9685.cpp.o"
-  "/home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/actuator.cpp" "/home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/actuator.cpp.o"
+  "/home/stingray/catkin_ws/src/pectoral_fin_actuators_topic/src/Servo.cpp" "/home/stingray/catkin_ws/build/pectoral_fin_actuators_topic/CMakeFiles/pectoral_fin_actuators_topic.dir/src/Servo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
